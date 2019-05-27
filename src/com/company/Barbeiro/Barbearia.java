@@ -59,15 +59,16 @@ public class Barbearia {
 
     public synchronized void clienteEntrou(Cliente cliente){
         //esse metodo so pode ser lido por uma thread por vez
-        avisaBarbeiros();
         System.out.println("[CLI]>>Cliente " + cliente.id + " entrou na Barbearia.");
         if(this.filaClientes.size() <= this.capacidade){
             if(this.filaClientes.size() == 0 && this.disponiveis > 0){
                 System.out.println("[CLI]>>Cliente " + cliente.id + " deu sorte e nao precisou sentar.");
                 this.filaClientes.add(cliente);
+                avisaBarbeiros();
             }else{
-                System.out.println("[CLI]>>Cliente " + cliente.id + " sentou.");
                 this.filaClientes.add(cliente);
+                System.out.println("[CLI]>>Cliente " + cliente.id + " sentou na cadeira de posicao [" + filaClientes.size() + "].");
+                avisaBarbeiros();
             }
             //A thread que estava executando ja fez a alteracao que precisava agr ela libera o lock
             notifyAll();
@@ -80,8 +81,7 @@ public class Barbearia {
 
     }
 
-    public synchronized void atendeCliente(long barbeiroID){
-        System.out.println("[SYS]>Barbeiro " + barbeiroID + " acordou...");
+    public synchronized Cliente atendeCliente(long barbeiroID){
         if(this.filaClientes.size() > 0){
             //Tem alguem para ser atendido pelo nosso barbeiro
             barbeiroBusy();
@@ -89,19 +89,13 @@ public class Barbearia {
             this.filaClientes.remove(0);
             //olha que interessante, eu ja peguei o cabeca da fila, entao eu ja posso liberar os outros barbeiros a trabalharem
             notifyAll();
-            avisaBarbeiros();
-            System.out.println("[BAR]>>O barbeiro " + barbeiroID + " esta atendendo o cliente " + cliente.id);
-            try {
-                sleep(1000);
-            } catch (InterruptedException e) {
-                e.printStackTrace();
-            }
             barbeiroFree();
             this.decrementaClientes();
-            cliente.cortouCabelo();
+            return cliente;
         } else{
             if(this.qntd_clientes == 0){
                 notifyAll();
+                return null;
             }else{
                 System.out.println("[SYS]>Barbeiro " + barbeiroID + " indo dormir....");
                 try {
@@ -109,6 +103,7 @@ public class Barbearia {
                 } catch (InterruptedException e) {
                     e.printStackTrace();
                 }
+                return null;
             }
         }
     }

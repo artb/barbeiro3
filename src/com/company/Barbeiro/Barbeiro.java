@@ -1,5 +1,7 @@
 package com.company.Barbeiro;
 
+import static java.lang.Thread.sleep;
+
 public class Barbeiro implements Runnable {
 
     public Barbearia fila;
@@ -8,6 +10,22 @@ public class Barbeiro implements Runnable {
 
     public Barbeiro(Barbearia fila){
         this.fila = fila;
+    }
+
+    public void trabalha(Barbearia fila){
+        Cliente cliente;
+        System.out.println("[SYS]>Barbeiro " + this.id + " acordou...");
+        cliente = fila.atendeCliente(this.id);
+        if(cliente != null){
+            System.out.println("[BAR]>>O barbeiro " + this.id + " esta atendendo o cliente " + cliente.id);
+            try {
+                sleep(1000);
+            } catch (InterruptedException e) {
+                e.printStackTrace();
+            }
+            cliente.cortouCabelo();
+
+        }
     }
 
 
@@ -23,7 +41,7 @@ public class Barbeiro implements Runnable {
             O metodo getCliente eh syncronized, ou seja, apenas uma thread vai poder manusear por vez
              */
 //            this.fila.barbeiroBusy();
-            this.fila.atendeCliente(this.id);
+            trabalha(this.fila);
 //            this.fila.barbeiroFree();
 
         }
