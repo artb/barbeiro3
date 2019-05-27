@@ -1,4 +1,4 @@
-package com.company;
+package com.company.Barbeiro;
 
 import java.util.ArrayList;
 
@@ -89,9 +89,10 @@ public class Barbearia {
             this.filaClientes.remove(0);
             //olha que interessante, eu ja peguei o cabeca da fila, entao eu ja posso liberar os outros barbeiros a trabalharem
             notifyAll();
+            avisaBarbeiros();
             System.out.println("[BAR]>>O barbeiro " + barbeiroID + " esta atendendo o cliente " + cliente.id);
             try {
-                sleep(5000);
+                sleep(1000);
             } catch (InterruptedException e) {
                 e.printStackTrace();
             }
@@ -101,12 +102,13 @@ public class Barbearia {
         } else{
             if(this.qntd_clientes == 0){
                 notifyAll();
-            }
-            System.out.println("[SYS]>Barbeiro " + barbeiroID + " indo dormir....");
-            try {
-                wait();
-            } catch (InterruptedException e) {
-                e.printStackTrace();
+            }else{
+                System.out.println("[SYS]>Barbeiro " + barbeiroID + " indo dormir....");
+                try {
+                    wait();
+                } catch (InterruptedException e) {
+                    e.printStackTrace();
+                }
             }
         }
     }

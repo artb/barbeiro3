@@ -1,4 +1,4 @@
-package com.company;
+package com.company.Barbeiro;
 
 public class Cliente implements Runnable {
 
