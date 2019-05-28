@@ -53,7 +53,7 @@ public class Main {
             list.remove(index);
             Thread daVez = threads.get(index);
             long idT = daVez.getId();
-            System.out.println("[SYS]> A thread " + idT + " foi escolhida aleatoriamente.");
+//            System.out.println("[SYS]> A thread " + idT + " foi escolhida aleatoriamente.");
             daVez.start();
             threads.remove(daVez);
 

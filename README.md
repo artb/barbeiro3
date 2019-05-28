@@ -1,3 +1,5 @@
 # Trabalho de SO - Monitores em java
-##Versao 2.0 funcionando completamente
-### Trabalho de Sistemas Operacionais, barbeiro em Java funcionando a partir da versao 1.0 do trabalho com paralelismo total 
+## Versoes do trabalho:
+### Versao 2.1 adicao de um sleep pra gerar mais chance de conflito nos leitores
+### Versao 2.0 Leitores e escritores funcionando completamente
+### Versao 1.0 Barbeiro funcionando e inicio dos leitores e escritores 

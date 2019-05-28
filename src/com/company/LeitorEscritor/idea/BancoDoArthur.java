@@ -6,6 +6,7 @@ public class BancoDoArthur {
 
     public int saldo;
     public boolean bloqueado = false;
+    public long idBloqueado = 0;
 
 
     public BancoDoArthur(int saldo){
@@ -42,6 +43,7 @@ public class BancoDoArthur {
     public synchronized void escreveComPrioridade(long eID, int novoValor){
         this.bloqueado = true;
         System.out.println("[SYS]>> O Escritor " + eID + " entrou na regiao critica, TRAVANDO leitores!!");
+        this.idBloqueado = eID;
         int macaco = this.saldo + novoValor;
         try {
             sleep(300);
@@ -49,7 +51,6 @@ public class BancoDoArthur {
             e.printStackTrace();
         }
         long startTimeMs = System.currentTimeMillis();
-        System.out.println("[SYS]>> O Escritor " + eID + " entrou na regiao critica!!");
         System.out.println("[ESCRITOR " + eID + "]>> Vou mudar o seu saldo de: " + this.saldo + " para: " + macaco + " no instante "
                 + startTimeMs % 1000000);
         this.saldo = macaco;
@@ -60,7 +61,7 @@ public class BancoDoArthur {
 //        } catch (InterruptedException e) {
 //            e.printStackTrace();
 //        }
-        System.out.println("[SYS]>> O Escritor " + eID + " esta saindo da regiao critica.");
+        System.out.println("[SYS]>> O Escritor " + eID + " esta saindo da regiao critica. DESBLOQUEANDO leitores e escritores");
         System.out.println("[ESCRITOR " + eID + "]>> Terminei meu trabalho, estou finalizando.");
 
 
@@ -77,10 +78,10 @@ public class BancoDoArthur {
 
     public int leSafe(long lID){
         if(this.bloqueado){
-            System.out.println("[LEITOR " + lID + "]>> FUI BLOQUEADO!!!! Nao posso ler enquanto um escritor esta ativo.");
+            System.out.println("[LEITOR " + lID + "]>> FUI BLOQUEADO!!!! ESCRITOR [" + this.idBloqueado + "] tem o lock");
             while (!this.bloqueado){
                 try {
-                    wait();
+                    sleep(300);
                 } catch (InterruptedException e) {
                     e.printStackTrace();
                 }

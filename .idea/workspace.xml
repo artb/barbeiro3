@@ -2,11 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="88aafc13-08a4-45a9-8706-bceee6956071" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/company/LeitorEscritor/idea/BancoDoArthur.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/company/LeitorEscritor/idea/Escritor.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/company/LeitorEscritor/idea/Leitor.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/company/LeitorEscritor/idea/Main.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/barbeiro3/com/company/LeitorEscritor/idea/BancoDoArthur.class" afterPath="$PROJECT_DIR$/out/production/barbeiro3/com/company/LeitorEscritor/idea/BancoDoArthur.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/company/LeitorEscritor/idea/BancoDoArthur.java" afterPath="$PROJECT_DIR$/src/com/company/LeitorEscritor/idea/BancoDoArthur.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/company/LeitorEscritor/idea/Main.java" afterPath="$PROJECT_DIR$/src/com/company/LeitorEscritor/idea/Main.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -21,8 +20,8 @@
       <file leaf-file-name="Main.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/company/LeitorEscritor/idea/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="178">
-              <caret line="39" column="78" lean-forward="false" selection-start-line="39" selection-start-column="78" selection-end-line="39" selection-end-column="78" />
+            <state relative-caret-position="433">
+              <caret line="56" column="26" lean-forward="true" selection-start-line="56" selection-start-column="26" selection-end-line="56" selection-end-column="26" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#284#292#0" expanded="true" />
@@ -32,36 +31,26 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Escritor.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/company/LeitorEscritor/idea/Escritor.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="285">
-              <caret line="21" column="0" lean-forward="false" selection-start-line="21" selection-start-column="2" selection-end-line="25" selection-end-column="11" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Leitor.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="Leitor.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/com/company/LeitorEscritor/idea/Leitor.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="279">
-              <caret line="35" column="20" lean-forward="false" selection-start-line="35" selection-start-column="20" selection-end-line="35" selection-end-column="20" />
+            <state relative-caret-position="219">
+              <caret line="31" column="23" lean-forward="true" selection-start-line="31" selection-start-column="23" selection-end-line="31" selection-end-column="23" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="BancoDoArthur.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="BancoDoArthur.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/company/LeitorEscritor/idea/BancoDoArthur.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="228">
-              <caret line="79" column="68" lean-forward="false" selection-start-line="79" selection-start-column="68" selection-end-line="79" selection-end-column="68" />
+            <state relative-caret-position="287">
+              <caret line="83" column="27" lean-forward="false" selection-start-line="83" selection-start-column="27" selection-end-line="83" selection-end-column="27" />
               <folding>
-                <element signature="e#208#209#0" expanded="true" />
-                <element signature="e#242#243#0" expanded="true" />
-                <element signature="e#272#273#0" expanded="true" />
+                <element signature="e#241#242#0" expanded="true" />
+                <element signature="e#275#276#0" expanded="true" />
                 <element signature="e#305#306#0" expanded="true" />
+                <element signature="e#338#339#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -98,9 +87,10 @@
         <option value="$PROJECT_DIR$/src/com/company/LeitorEscritor/Escritor.java" />
         <option value="$PROJECT_DIR$/src/com/company/LeitorEscritor/Leitor.java" />
         <option value="$PROJECT_DIR$/src/com/company/LeitorEscritor/Main.java" />
-        <option value="$PROJECT_DIR$/src/com/company/LeitorEscritor/idea/Main.java" />
         <option value="$PROJECT_DIR$/src/com/company/LeitorEscritor/idea/Escritor.java" />
         <option value="$PROJECT_DIR$/src/com/company/LeitorEscritor/idea/Leitor.java" />
+        <option value="$PROJECT_DIR$/src/com/company/LeitorEscritor/idea/Bloqueador.java" />
+        <option value="$PROJECT_DIR$/src/com/company/LeitorEscritor/idea/Main.java" />
         <option value="$PROJECT_DIR$/src/com/company/LeitorEscritor/idea/BancoDoArthur.java" />
       </list>
     </option>
@@ -498,58 +488,40 @@
           <option name="timeStamp" value="61" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/com/company/LeitorEscritor/idea/Escritor.java</url>
-          <line>20</line>
-          <properties />
-          <option name="timeStamp" value="66" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/com/company/LeitorEscritor/idea/BancoDoArthur.java</url>
-          <line>20</line>
+          <line>21</line>
           <properties />
           <option name="timeStamp" value="70" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/com/company/LeitorEscritor/idea/BancoDoArthur.java</url>
-          <line>19</line>
+          <line>20</line>
           <properties />
           <option name="timeStamp" value="71" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/com/company/LeitorEscritor/idea/BancoDoArthur.java</url>
-          <line>21</line>
+          <line>22</line>
           <properties />
           <option name="timeStamp" value="72" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/com/company/LeitorEscritor/idea/BancoDoArthur.java</url>
-          <line>25</line>
+          <line>26</line>
           <properties />
           <option name="timeStamp" value="75" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/com/company/LeitorEscritor/idea/BancoDoArthur.java</url>
-          <line>26</line>
+          <line>27</line>
           <properties />
           <option name="timeStamp" value="76" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/com/company/LeitorEscritor/idea/BancoDoArthur.java</url>
-          <line>27</line>
+          <line>28</line>
           <properties />
           <option name="timeStamp" value="77" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/com/company/LeitorEscritor/idea/Escritor.java</url>
-          <line>19</line>
-          <properties />
-          <option name="timeStamp" value="79" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/com/company/LeitorEscritor/idea/Escritor.java</url>
-          <line>27</line>
-          <properties />
-          <option name="timeStamp" value="81" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/com/company/LeitorEscritor/idea/Leitor.java</url>
@@ -565,7 +537,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/com/company/LeitorEscritor/idea/BancoDoArthur.java</url>
-          <line>74</line>
+          <line>75</line>
           <properties />
           <option name="timeStamp" value="84" />
         </line-breakpoint>
@@ -654,18 +626,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/company/LeitorEscritor/idea/Main.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="178">
-          <caret line="39" column="78" lean-forward="false" selection-start-line="39" selection-start-column="78" selection-end-line="39" selection-end-column="78" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#284#292#0" expanded="true" />
-            <element signature="e#1472#1481#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/company/LeitorEscritor/idea/Escritor.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="285">
@@ -674,24 +634,44 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/company/LeitorEscritor/idea/Leitor.java">
+    <entry file="file://$PROJECT_DIR$/src/com/company/LeitorEscritor/idea/Bloqueador.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="279">
-          <caret line="35" column="20" lean-forward="false" selection-start-line="35" selection-start-column="20" selection-end-line="35" selection-end-column="20" />
+        <state relative-caret-position="60">
+          <caret line="4" column="4" lean-forward="false" selection-start-line="4" selection-start-column="4" selection-end-line="4" selection-end-column="4" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/company/LeitorEscritor/idea/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="433">
+          <caret line="56" column="26" lean-forward="true" selection-start-line="56" selection-start-column="26" selection-end-line="56" selection-end-column="26" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#284#292#0" expanded="true" />
+            <element signature="e#1472#1481#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/company/LeitorEscritor/idea/BancoDoArthur.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="228">
-          <caret line="79" column="68" lean-forward="false" selection-start-line="79" selection-start-column="68" selection-end-line="79" selection-end-column="68" />
+        <state relative-caret-position="287">
+          <caret line="83" column="27" lean-forward="false" selection-start-line="83" selection-start-column="27" selection-end-line="83" selection-end-column="27" />
           <folding>
-            <element signature="e#208#209#0" expanded="true" />
-            <element signature="e#242#243#0" expanded="true" />
-            <element signature="e#272#273#0" expanded="true" />
+            <element signature="e#241#242#0" expanded="true" />
+            <element signature="e#275#276#0" expanded="true" />
             <element signature="e#305#306#0" expanded="true" />
+            <element signature="e#338#339#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/company/LeitorEscritor/idea/Leitor.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="219">
+          <caret line="31" column="23" lean-forward="true" selection-start-line="31" selection-start-column="23" selection-end-line="31" selection-end-column="23" />
+          <folding />
         </state>
       </provider>
     </entry>
